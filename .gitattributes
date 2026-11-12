@@ -1,0 +1,46 @@
+# 统一文本文件的行尾, 避免跨平台差异
+* text=auto eol=lf
+
+# 源码与文档
+*.java text
+*.md text
+*.xml text
+*.iml text
+*.properties text
+*.json text
+*.yml text
+*.yaml text
+
+# Git 与编辑器配置
+.gitignore text
+.gitattributes text
+
+# Windows 脚本必须保留 CRLF, 否则 cmd 解析可能出错
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Shell 脚本固定使用 LF
+*.sh text eol=lf
+
+# 二进制资源与产物
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.ico binary
+*.webp binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.mid binary
+*.midi binary
+*.jar binary
+*.class binary
+*.zip binary
+*.7z binary
